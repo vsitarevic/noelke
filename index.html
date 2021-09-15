@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="flex items-center justify-around py-3">
+
+    <img src="img/logo.png" alt="Marc Noelke">
+
+    <div>
+      <h5 class="text-right color-lightgray">0800 4100 280  |  info@marcnoelke.de</h5>
+      
+      <div class="flex items-center mt-2">
+        <ul class="flex color-gray font-medium">
+          <li class="mx-5"><a href="#">About</a></li>
+          <li class="dropdown mx-3">
+            Themen <i class="material-icons align-middle">expand_more</i>
+            <div class="dropdown-content color-gray font-medium">
+              <ul>
+                <li>
+                  <a class="flex" href="#">
+                    <svg class="dropdown-icon">
+                      <use xlink:href="icons/nav.svg#compass"></use>
+                    </svg> Long-Covid
+                  </a>
+                </li>
+                <li>
+                  <a class="flex" href="#">
+                    <svg class="dropdown-icon">
+                      <use xlink:href="icons/nav.svg#virus"></use>
+                    </svg>
+                    Neuro-Riding
+                  </a>
+                </li>
+                <li>
+                  <a class="flex" href="#">
+                    <svg class="dropdown-icon">
+                      <use xlink:href="icons/nav.svg#knight"></use>
+                    </svg>
+                    Neuro-Atheltik
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="mx-3 flex">Leistungen <i class="material-icons">expand_more</i></li>
+          <li class="mx-5"><a href="#">News</a></li>
+        </ul>
+        
+        <button class="bg-transparent color-gray border border-custom-gray rounded-full font-medium py-1 px-5 mx-2">Beratungsgesprach</button>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
