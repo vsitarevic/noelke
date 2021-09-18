@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marc Noelke</title>
+  <title>Coaching</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="splide/splide-core.min.css">
   <link rel="stylesheet" href="splide/splide.min.css">
   <script src="splide/splide.min.js"></script>
-  <script src="index.js"></script>
+  <script src="coaching.js"></script>
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -73,7 +73,7 @@
               </ul>
             </div>
           </li>
-          <li class="flex mx-3 py-4">Leistungen <i class="material-icons">expand_more</i></li>
+          <li class="flex mx-3 py-4 nav-link-active">Leistungen <i class="material-icons">expand_more</i></li>
           <li class="mx-5 py-4"><a href="#">News</a></li>
         </ul>
         
@@ -82,29 +82,24 @@
     </div>
   </nav>
 
-  <div class="flex justify-center align-middle hero-background">
-    <div class="w-4/5 2xl:w-3/5 flex flex-col lg:flex-row justify-around py-10 lg:py-5 xl:py-10">
-      <div class="hero flex flex-col justify-center lg:w-3/5">
-        <h3 class="text-white font-light">MARC NOELKE</h3>
-        <h1 class="color-lightgray font-bold">Experte fur Neuro-Athletic</h1>
-        <h3 class="text-white font-thin py-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h3>
-        <div class="flex flex-col sm:flex-row my-5">
-          <button class="bg-white color-gray rounded-full font-medium py-2 px-5 mb-5 sm:mb-0 mr-0 sm:mr-5">Zum Coaching Programm</button>
-          <button class="background-lightgray text-white rounded-full font-medium py-2 px-5">Zum Erstgesprach</button>
-        </div>
-        <div class="flex flex-row lg:mt-5 xl:mt-20">
-          <img src="img/img_a.png" alt="standard">
-          <img class="mx-5" src="img/cmmi3.png" alt="ccmi3">
-        </div>
+  <div class="md:pt-20 lg:pt-28 mx-10">
+    <div class="flex flex-col md:flex-row text-center md:text-left justify-center">
+      <div class="coaching-text my-auto md:pb-24 pb-10 lg:pb-28 xl:pb-20 md:pl-10 lg:pl-20 xl:pl-40">
+        <div class="bubble ml-auto mb-5"></div>
+        <h3 class="color-lightgray">SERVICES</h3>
+        <h2 class="font-bold">1:1-Coaching</h2>
+        <button class="background-lightgray text-white rounded-full font-medium py-2 px-5">Zum Erstgesprach</button>
       </div>
-      <span class="hidden lg:flex flex-col justify-center"><i class="material-icons play-icon">play_arrow</i></span>
+      <div>
+        <img class="pl-10 sm:pl-20" src="img/coaching.png" alt="coaching">
+      </div>
     </div>
   </div>
 
   <div class="summary">
     <div class="flex flex-col xl:flex-row justify-between border-b-2 border-custom-lightgray pb-9">
       <h2 class="color-lightgray font-bold xl:w-3/6">
-        Das Puzzle gemeinsam lösen
+        Wie funktioniert das Einzeltraining?
       </h2>
       <p class="color-black font-normal xl:w-2/5">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
@@ -119,7 +114,7 @@
         <svg class="summary-icon">
           <use xlink:href="icons/nav.svg#virus"></use>
         </svg>
-        <h3 class="font-bold color-gray py-2">Long-Covid</h3>
+        <h3 class="font-bold color-gray py-2">Grund Nr.1</h3>
         <p class="color-black">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
       </div>
 
@@ -127,7 +122,7 @@
         <svg class="summary-icon">
           <use xlink:href="icons/nav.svg#knight"></use>
         </svg>
-        <h3 class="font-bold color-gray py-2">Neuro-Riding</h3>
+        <h3 class="font-bold color-gray py-2">Grund Nr.2</h3>
         <p class="color-black">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
       </div>
 
@@ -135,8 +130,62 @@
         <svg class="summary-icon">
           <use xlink:href="icons/nav.svg#compass"></use>
         </svg>
-        <h3 class="font-bold color-gray py-2">Neuro-Athletik</h3>
+        <h3 class="font-bold color-gray py-2">Grund Nr.3</h3>
         <p class="color-black">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-28">
+    <div class="flex flex-col md:flex-row justify-center">
+      <div class="mx-auto mb-5 md:mb-0 md:w-2/6 md:mx-5 px-5 sm:px-20 md:px-0 order-1">
+        <img src="img/img.jpg" alt="ziel">
+      </div>
+      <div class="md:w-2/6 mx-5 px-5 sm:px-20 md:px-0 order-2">
+        <h3 class="font-bold color-gray">Ziel – Lorem ipsum dolor sit amet</h3>
+        <p class="my-3">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="flex color-lightgray"><i class="material-icons mr-2">add_circle_outline</i>Mehr lesen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-28">
+    <div class="flex flex-col md:flex-row justify-center">
+      <div class="mx-auto mb-5 md:mb-0 md:w-2/6 md:mx-5 px-5 sm:px-20 md:px-0 order-1 md:order-2">
+        <img src="img/img.jpg" alt="ziel">
+      </div>
+      <div class="md:w-2/6 mx-5 px-5 sm:px-20 md:px-0 order-2 md:order-1">
+        <h3 class="font-bold color-gray">Ziel – Lorem ipsum dolor sit amet</h3>
+        <p class="my-3">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="flex color-lightgray"><i class="material-icons mr-2">add_circle_outline</i>Mehr lesen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-28">
+    <div class="flex flex-col md:flex-row justify-center">
+      <div class="mx-auto mb-5 md:mb-0 md:w-2/6 md:mx-5 px-5 sm:px-20 md:px-0 order-1">
+        <img src="img/img.jpg" alt="ziel">
+      </div>
+      <div class="md:w-2/6 mx-5 px-5 sm:px-20 md:px-0 order-2">
+        <h3 class="font-bold color-gray">Ziel – Lorem ipsum dolor sit amet</h3>
+        <p class="my-3">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="flex color-lightgray"><i class="material-icons mr-2">add_circle_outline</i>Mehr lesen</div>
       </div>
     </div>
   </div>
@@ -194,55 +243,6 @@
         </ul>
       </div>
     </div>    
-  </div>
-
-  <div id="logos" class="splide bg-white pt-8 pb-14">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <img class="m-auto" src="img/img_02.png" alt="img2">
-        </li>
-        <li class="splide__slide">
-          <img class="m-auto" src="img/img_03.png" alt="img3">
-        </li>
-        <li class="splide__slide">
-          <img class="m-auto" src="img/img_04.png" alt="img4">
-        </li>
-        <li class="splide__slide">
-          <img class="m-auto" src="img/img_05.png" alt="img5">
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="summary">
-    <div class="flex flex-col md:flex-row justify-between border-b-2 border-custom-lightgray pb-9">
-      <div class="text-center mb-4 md:text-left">
-        <h2 class="font-bold color-lightgray leading-tight">Über uns –<br> Sit amet Consetetur.</h2>
-        <button class="background-gray-button text-white rounded-full font-medium py-2 px-8 mt-3">Mehr über uns</button>
-      </div>
-      <p class="md:w-1/2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-    </div>
-
-    <div class="flex flex-col sm:flex-row mt-9">
-      <div class="py-8">
-        <h4 class="color-verylightgray">01</h4>
-        <h3 class="font-bold color-lightgray py-2">Story</h3>
-        <p class="color-black">Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-      </div>
-      <div class="py-8 my-9 sm:my-0 sm:mx-9">
-        <h4 class="color-verylightgray">02</h4>
-        <h3 class="font-bold color-lightgray py-2">Mission</h3>
-        <p class="color-black">Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-      </div>
-      <div class="py-8">
-        <h4 class="color-verylightgray">03</h4>
-        <h3 class="font-bold color-lightgray py-2">Vision</h3>
-        <p class="color-black">Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-      </div>
-    </div>
   </div>
 
   <div class="contact-us flex flex-col justify-center">

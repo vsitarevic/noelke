@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import url('fonts/IcoMoon-Ultimate.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 body{
   background-color: #F5F6F8;
@@ -11,6 +10,17 @@ nav{
   background-color: #fff;
 }
 
+h1{
+  font-size: 72px;
+}
+h2{
+  font-size: 48px;
+}
+
+h3{
+  font-size: 24px;
+}
+
 h4{
   font-size: 16px;
 }
@@ -19,8 +29,22 @@ h5{
   font-size: 14px;
 }
 
+p{
+  font-size: 16px;
+}
+
 nav {
   font-size: 18px;
+}
+
+.hero > h3 {
+  font-size: 20px;
+}
+
+.hero-background{
+  background-image: url('img/stage.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .background-gray{
@@ -29,19 +53,28 @@ nav {
 .background-lightgray{
   background-color: #A0A6B9;
 }
+.background-gray-button{
+  background-color: #828AA3;
+}
 
+.color-black{
+  color:#27282A;
+}
 .color-gray{
   color: #494E54;
 }
 .color-lightgray{
   color: #A0A6B9;
 }
+.color-verylightgray{
+  color: #C8CDD6
+}
 
 .border-custom-gray{
   border-color: #494E54;
 }
 .border-custom-lightgray{
-  border-color: #A0A6B9;
+  border-color: #C8CDD6;
 }
 
 .dropdown{
@@ -49,9 +82,33 @@ nav {
   position: relative;
 }
 
+.mobile-dropdown-content{
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  padding: 1em;
+  right: 0;
+  font-size: 26px;
+  white-space: nowrap;
+}
+
+.mobile-dropdown-content > ul > li{
+  padding: 1em 2em 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.dropdown-mobile-subitems{
+  padding: 0.25em 0 0.25em 0.5em;
+  font-size: 0.8em;
+}
+.dropdown-mobile-subitems > li{
+  margin-top: 0.25em;
+}
+
 .dropdown-content{
   background-color: #fff;
   display: none;
+  z-index: 1;
   position: absolute;
   padding: 2em 3.5em 1em 1em;
   left: -2em;
@@ -76,4 +133,155 @@ nav {
   height: 22px;
   width: 16px;
   margin-right: 10px;
+}
+
+.nav-icon{
+  font-size: 34px;
+}
+
+/* this class should be added on the active page link */
+/* ex. if the site is on themen, this class should be added to themen link in nav bar */
+.nav-link-active{
+  border-bottom-width: 5px;
+  border-color:#C8CDD6;
+  color: #A0A6B9;
+}
+
+.play-icon{
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 40px;
+  font-size: 60px;
+  background-color: #B2BAB9;
+  color: #283030;
+}
+
+.summary-icon{
+  fill: #A0A6B9;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.testimonial-icon{
+  fill: #D2D8E1;
+  height: 40px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.w-45{
+  width: 45%;
+}
+
+.summary{
+  margin: 5% 15%;
+}
+
+.card-text > p{
+  font-size: 24px;
+}
+.card-text > h3{
+  font-size: 16px;
+}
+
+.contact-us{
+  background-image: url('img/stage.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 -50px;
+  height: 500px;
+  padding: 0 20%;
+}
+
+.social-icon{
+  fill:#494E54;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bubble{
+  background-color: #788099;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 100%;
+}
+
+.coaching-text > h2{
+  font-size: 72px;
+  color: #494E54;
+}
+
+/* CUSTOM SPLIDE CSS */
+.splide__arrows > button{
+  background-color: #A1A7BA;
+  fill: #fff;
+}
+
+.splide__pagination{
+  bottom: -2em;
+}
+
+.splide__pagination__page{
+  border-radius: 0;
+  width: 100%;
+  height: 3px;
+  margin: 0;
+}
+.splide__pagination > li {
+  flex-grow: 1;
+}
+.splide__pagination__page.is-active{
+  transform: scaleY(1.4);
+  background-color: #474D53;
+  opacity: 1;
+}
+
+#logos .splide__slide{
+  display: flex;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px)  {
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 38px;
+  }
+  .summary{
+    margin: 5%;
+  }
+  .summary-icon{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coaching-text > h2{
+    font-size: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-background{
+    background-size: auto;
+    background-position: 50%;
+  }
+  .contact-us{
+    padding: 0 5%;
+    background-size: auto;
+    background-position: 50%;
+  }
+}
+@media (max-width: 768px)  {
+  .summary{
+    margin: 5% 10%;
+  }
+  .coaching-text > h2{
+    font-size: 48px;
+  }
+}
+@media (max-width: 640px) {
+  .coaching-text > h2{
+    font-size: 40px;
+  }
 }
